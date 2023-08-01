@@ -11,7 +11,7 @@ for i in range(1, n - 1):
     if costs[i] < m: # 지금까지의 주유 가격보다 이번 도시에서의 가격이 작은 경우
         res += m * dist # 지금까지의 거리 * 가장 작은 주유 가격 을 더해줌
         dist = roads[i]
-        m = costs[i] 
+        m = costs[i]
     else:
         dist += roads[i]
 
